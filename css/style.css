@@ -1,0 +1,299 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+body{
+	font-family: 'Playfair Display', serif;
+}
+header{
+	width :100%;height: 60px;background-color: rgba( 255,255,255,0.80);
+	box-shadow: 5px 5px 5px lightgray;position: fixed; left: 0;top: 0;z-index: inherit;
+}
+.logo{
+    padding-top:12px;
+}
+.logo img{
+	width: 30%;
+	margin-bottom: 30px;
+
+}
+.menu ul{
+	margin: 0; padding: 0; list-style: none;display: flex;
+}
+.menu{
+	padding-top: 20px;
+	
+	
+}
+.menu ul li a{
+	padding: 8px 20px; border-radius: 20px;color:#1F0331 ;
+}
+.menu ul li a:hover{
+	background-color:  rgba(245,165,167,1.00);color: mediumpurple;
+}
+#home{
+	width: 100%;min-height: 900px; padding-top: 100px;
+	background: url( "../img/jimi1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left 0 top 0, right 0 bottom 0;
+	
+}
+#home h1{
+	color: white;
+	font-size: 30px;
+}
+#home h2{
+	color: white;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+#about{
+	width: 100%;min-height: 900px; padding-top: 100px; 
+}
+#about .so{
+	font-size: 120px; font-weight: bold; color:#441148; padding: 0 5px;
+}
+.text-mau{
+	color:#441148;
+}
+#about h2{
+	color: #CE7CE0
+}
+#about .years{
+	letter-spacing: 25px; color: #600EA3;
+}
+#skill{
+	width: 100%;min-height: 900px; padding-top: 90px; 
+}
+.text-big{
+	font-size: 35px;
+}
+.progress{
+	height: 5px;
+	width: 100%;
+	background-color: #C7C6C6;
+	border-radius: 6px;overflow: hidden;
+}
+.bar{
+	height: 5px;
+	border-radius: 6px;
+	color: white;
+	text-align: center;
+}
+#skill .tab {
+/*  overflow: hidden;*/
+  border: 1px solid #ccc;
+  display: flex;
+  border-radius: 5px;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+#skill .tab button {
+  border-radius: 5px;
+  width:50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+#skill .tab button:hover {
+  background-color: #C857F9;
+	color:white;
+}
+
+/* Create an active/current tablink class */
+#skill .tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+#skill .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#skill .tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+
+#service{
+	width: 100%;min-height: 900px; padding-top: 90px; 
+}
+#service .service{
+	width: 100%;height: 190px;display: flex;
+}
+#service .icon{
+	width: 170px;height: 200px;border: 0.75px solid #903EBC;
+	display: flex; justify-content: center;align-items: center
+}
+#service .icon i{
+	font-size: 40px;color: red;transition: all 0.7s;
+}
+#service .icon img{
+	width: 60px;color: purple;transition: all 0.7s;height: auto;
+}
+#service .service-text{
+	width: 100%;padding: 10px;height: 200px;transition: ease 0.7s;
+}
+#service .service:hover .icon i{
+	font-size: 60px;
+}
+#service .service:hover .icon img{
+	width: 60px;
+}
+#service .service:hover .service-text{
+	background-color: purple;color: white;
+}
+#service .service:hover .service-text h4{
+	color:#DF04F8;
+}
+#projects{
+	width: 100%;min-height: 900px; padding-top: 50px; 
+}
+#projects .box{
+	display: flex;justify-content: space-between;align-items: center;
+}
+/* Style the tab */
+#projects .tab {
+  
+}
+
+/* Style the buttons inside the tab */
+#projects .tab button {
+  background: none;
+  border: 2px solid white;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 5px; margin-left: 15px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+border-bottom: 2px solid #E477DC;color:#E477DC; 
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+ border-bottom: 2px #8621A7; color: #8621A7;
+}
+
+/* Style the tab content */
+#projects .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+ 
+  border-top: none;
+}
+#testimonial{
+	width: 100%;min-height: 900px; padding-top: 50px; 
+}
+
+#testimonial .client img{
+	width: 100px; height: 100px; border-radius: 50%;
+}
+#testimonial .vien{
+	width: 100px; height: 100px; border-radius: 50%;padding: 7px;
+	border: 1px solid #3D0A44
+}
+#testimonial .client{
+	text-align: center; display: flex;flex-direction: column;
+	justify-content: center;align-items: center;padding: 15px 50px;
+}
+#silder1 .owl-dots{ position:absolute; bottom: -15px; left:46%;}
+#silder1 .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+}
+#silder1 .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#silder1 .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color:#040404
+}
+
+#silder1 .owl-nav .owl-next{ position:absolute; right:0%;}
+#silder1 .owl-nav .owl-prev{ position:absolute; left:0%;}
+#silder1 .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:#BD27F7;
+      text-decoration: none; }
+
+
+
+#contact{
+	width: 100%;min-height: 900px; padding-top: 50px;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.text-vang{
+	color: #D6C723;
+}
+.text-den{
+	color: black;
+}
+.be img{
+	width: 60px;color: purple;transition: all 0.7s;height: auto;
+}
+.bo-goc{
+	border-radius: 8px;
+}
+.text-do{
+	color: red;
+}
+.text-tim{
+	color: #620495;
+}
+.text-timm{
+	color:#BC03F1;
+}
+.vien-chan{
+	padding-bottom: 25px;border-bottom: 1px solid #6A6A6A;
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 1s ease-in both;
+	        animation: rotate-center 1s ease-in both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-31 8:16:8
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
